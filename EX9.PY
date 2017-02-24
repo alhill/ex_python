@@ -3,10 +3,12 @@
 from random import randint
 
 while True:
+    nint = 0
     numero = randint(1,9)
     print ("Estoy pensando en un número, cual es?")
 
     while True:
+        nint += 1
         while True:
             try:
                 intento = int(input("Inserta un número entre el 1 y el 9: "))
@@ -23,6 +25,14 @@ while True:
             print ("Demasiado bajo...")
         else:
             print ("Demasiado alto...")
+    #
+
+    if (nint == 1):
+        print ("Has acertado a la primera!")
+    elif (nint == 3):
+        print ("Has acertado al 3er intento")
+    else:
+        print ("Has acertado al {}º intento".format(nint))
     #
 
     while True:
