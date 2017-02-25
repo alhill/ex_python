@@ -23,7 +23,7 @@ for i in range(num-2):
         primo = False
         break
 
-if primo:
+if primo and num > 0:
     print("{} es primo".format(num))
 else:
     print("{} no es primo".format(num))
